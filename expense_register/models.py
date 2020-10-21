@@ -28,6 +28,7 @@ class Expense(models.Model):
         return f'{self.document_no}'
 
     class Meta:
+        # todo: should be 0.00, not 0.01
         constraints = [
             models.CheckConstraint(
                 check=models.Q(summed__gt=Decimal('0.01')),

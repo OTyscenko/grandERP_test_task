@@ -4,7 +4,6 @@ from .models import ExpenseType, Suplier, Expense
 
 admin.site.register(ExpenseType)
 admin.site.register(Suplier)
-# admin.site.register(Expense)
 
 class ExpenseAdmin(admin.ModelAdmin):
     model = Expense
